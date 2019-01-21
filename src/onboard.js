@@ -13,17 +13,17 @@ const postResult = result => console.log(result.data);
 const message = {
   token: process.env.SLACK_ACCESS_TOKEN,
   link_names: true,
-  text: 'Welcome to the team! We\'re glad you\'re here.',
+  text: 'Welcome to the Map Camp Slack! We\'re glad you\'re here.',
   as_user: true,
   attachments: JSON.stringify([
     {
-      title: 'What is Slack?',
-      text: 'Slack is where work happens. If this is your first time using Slack, take some time to read the help docs at get.slack.help and our internal wiki. If you have any questions, jump into #help-slack and we\'ll help you out',
+      title: 'Helpful Resources',
+      text: 'Just to make you aware, there\'s a <https://community.wardleymaps.com|public Wardley maps forum> and a <https://www.linkedin.com/groups/13604539|Wardley Maps Community LinkedIn group> that you\'d also be welcome to join.\n\nFinally, a few more resources you may find useful:\n* <https://medium.com/wardleymaps|Creative commons book by Simon Wardley>\n* <https://bit.ly/wardleymaps|YouTube channel>\n* <https://www.wardleymaps.com/tool.html|Atlas>\n* <https://hiredthought.com/wardley-mapping/|Additional tools and templates>\n* <https://learn.leadingedgeforum.com/p/wardley-mapping/?product_id=277424|LEF Course>',
       color: '#74c8ed',
     },
     {
       title: 'Code of Conduct',
-      text: 'Our goal is to maintain a safe, helpful and friendly community for everyone, regardless of experience, gender identity and expression, sexual orientation, disability, personal appearance, body size, race, ethnicity, age, religion, nationality, or other defining characteristic. Please take the time to read through <https://code.localhost|Code of Conduct> before continuing.',
+      text: 'Our goal is to maintain a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. Please take the time to read through our <https://www.map-camp.com/_pages/code_of_conduct/|Code of Conduct> before continuing.',
       callback_id: 'terms-of-service',
       color: '#3060f0',
       actions: [{
